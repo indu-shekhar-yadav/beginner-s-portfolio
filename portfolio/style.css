@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Eczar&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+    position: absolute;
+    background-color: aqua;
+    /* width: 400px; */
+    font-family: 'Eczar', serif;
+    height: 120vh;
+    transition: transform 0.3s ease-in ;
+}
+.sidebar nav{
+    padding: 43px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 23px;
+    padding: 25px 0;
+}
+.sidebar nav li a{
+   text-decoration: none ;
+   color: rgb(58, 55, 55);
+}
+.main{
+    /* background-color:aquamarine; */
+    width: 100vw;
+}
+
+.container{
+    display: flex;
+}
+.infoContainer{
+    /* background-color: #3f5e8b ; */
+    height: 50vh;
+    width: 70vw;
+    margin: 120px auto;
+    display: flex;
+    justify-content: space-around;
+}
+.devInfo{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.hello{
+    font-size: 3em;
+    
+}
+.name{
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Eczar', serif;
+}
+.about{
+    font-size: 2.5em;
+}
+.moreabout{
+    font-size: 2em;
+    margin-top: 15px ;
+    font-family: 'Eczar', serif;
+}
+.buttons{
+    margin-top: 30px;
+    font-size: 15px;
+}
+.btn{
+    padding:6px 12px;
+    border-radius: 40px;
+    color: white;
+    background-color: rgb(84, 84, 171);
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px 10px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: white;
+    color: rgb(84, 84, 171);
+}
+
+.btn-sm{
+    margin: 10px 0;
+    padding:5px 11px ;
+    font-size: 10px;
+}
+.devPic img{
+    height: 50vh;
+}
+
+.contactform{
+    padding: 0 30px;
+    /* padding-top: 120px; */
+    
+    font-family: 'Eczar', serif;
+    margin: 0 80px ;
+}
+.contactform h1{
+    font-family: 'IBM Plex Serif', serif;
+    /* padding: 10px 0; */
+}
+
+.contactform form div{
+    padding: 8px 0 ;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contactform form div input{
+   /* width: 20vw; */
+   border-radius: 5px;
+   margin: 5px 0 0 0;
+   padding: 3px;
+
+}
+.contactform form{
+    margin: 0 35px;
+ 
+ }
+
+
+#emailHelp{
+    font-size: 6px;
+    color: midnightblue;
+    margin: 0 5px;
+}
+
+#form-check{
+    flex-direction: row;
+}
+#form-check input{
+    width: 20px;
+    margin: 2px 0;
+}
+
+.blogItem{
+    margin: 20px;
+    font-family: 'Eczar', serif;
+}
+.blogContainer{
+    margin: 80px 80px;
+}
+h1{
+    font-family: 'Eczar', serif;
+    margin: 20px;
+}
+ p{
+    font-family: 'IBM Plex Serif', serif;
+ }
+ .intro{
+    margin: 80px;
+ }
+
+ .intro h2{
+    font-family: 'Eczar', serif;
+    margin: 12px;
+ }
+ .intro p{
+    font-family: 'Merriweather', serif;
+    margin: 12px;
+    line-height: 25px;
+ }
+
+ .skillContainer{
+    
+    padding: 12px;
+ }
+ .skill{
+    
+    margin: 10px;
+    border-radius: 25px;
+    width: 256px;
+    height: 10px;
+    background-color:rgb(130, 97, 161);
+    border: 3px solid rgb(88, 78, 78);
+}
+
+.skillItem{
+    display: subgrid;
+    width: 540px;
+    grid-template-columns: 120px 120px 120px;
+    align-items: start;
+    justify-content: space-between;
+    
+    /* align-items: center; */
+}
+
+.hundered{
+    width: 256px;
+    background-color: rgb(84, 177, 71);
+}
+.fifty{
+    width: 128px;
+    background-color: rgb(126, 193, 44);
+}
+.t5{
+    width: 64px;
+    background-color: rgb(192, 78, 78);
+}
+.sidebarGo{
+    transform: translate(-440px , 0px);
+    position: absolute;
+}
+.hamburger{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 115px;
+
+}
+
+@media (max-width: 1400px){
+    *{
+        /* background-color: rgb(201, 140, 140); */
+    }
+    .buttons{
+        font-size: 8px;
+    }
+    .devInfo{
+        font-size: 5px;
+    }
+    .devPic{
+        display: none;
+    }
+    .intro, .blogContainer, .contactform{
+        margin: 50px 8px;
+    }
+    /* .sidebar{
+        transform: translate(-440px , 0px);
+        position: absolute;
+    } */
+}
